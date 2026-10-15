@@ -1,0 +1,3572 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "INVOKEAI",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\ARTIST_TOOLS\\INVOKEAI\\UPSTREAM_CLONE",
+    "git": {
+      "head": "6c3277771d5e7885610505ab02900f9567ec3112",
+      "url": "https://github.com/invoke-ai/InvokeAI",
+      "branch": "main",
+      "committed_at": "2026-10-01T21:23:10-04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 5848,
+    "source_files_scanned": 5339,
+    "lines_of_code": 1011239,
+    "languages": {
+      ".ts": 2356,
+      ".tsx": 1778,
+      ".py": 1272,
+      ".json": 145,
+      ".png": 71,
+      ".md": 42,
+      ".svg": 27,
+      ".yaml": 25,
+      "(none)": 24,
+      ".mjs": 24,
+      ".yml": 22,
+      ".webp": 12,
+      ".txt": 11,
+      ".sh": 5,
+      ".ttf": 4
+    }
+  },
+  "licence": {
+    "spdx": "Apache-2.0",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 165,
+    "unique": 143,
+    "by_ecosystem": {
+      "npm": 162,
+      "pypi": 3
+    },
+    "list": [
+      {
+        "ecosystem": "pypi",
+        "name": "accelerate",
+        "version": "",
+        "source_file": "pyproject.toml",
+        "raw": "accelerate"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "bitsandbytes",
+        "version": "",
+        "source_file": "pyproject.toml",
+        "raw": "bitsandbytes"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "torch",
+        "version": ">= 1.4",
+        "source_file": "invokeai/backend/image_util/normal_bae/nets/submodules/efficientnet_repo/setup.py",
+        "raw": "torch >= 1.4"
+      },
+      {
+        "ecosystem": "npm",
+        "name": "openapi-typescript",
+        "version": "7.10.1",
+        "source_file": "invokeai/frontend/api/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prettier",
+        "version": "3.8.3",
+        "source_file": "invokeai/frontend/api/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "5.9.3",
+        "source_file": "invokeai/frontend/api/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@atlaskit/pragmatic-drag-and-drop",
+        "version": "^1.7.7",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@atlaskit/pragmatic-drag-and-drop-auto-scroll",
+        "version": "^2.1.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@atlaskit/pragmatic-drag-and-drop-hitbox",
+        "version": "^1.1.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@dagrejs/dagre",
+        "version": "^1.1.8",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@dagrejs/graphlib",
+        "version": "^2.2.4",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@fontsource-variable/inter",
+        "version": "^5.2.8",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@invoke-ai/ui-library",
+        "version": "github:invoke-ai/ui-library#v0.0.48",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@nanostores/react",
+        "version": "^1.1.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@observ33r/object-equals",
+        "version": "^1.1.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@reduxjs/toolkit",
+        "version": "2.8.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@roarr/browser-log-writer",
+        "version": "^1.3.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@xyflow/react",
+        "version": "^12.10.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ag-psd",
+        "version": "^28.5.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "async-mutex",
+        "version": "^0.5.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chakra-react-select",
+        "version": "^4.10.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "cmdk",
+        "version": "^1.1.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "compare-versions",
+        "version": "^6.1.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "dockview",
+        "version": "^4.12.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "es-toolkit",
+        "version": "^1.46.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "filesize",
+        "version": "^10.1.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fracturedjsonjs",
+        "version": "^4.1.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "framer-motion",
+        "version": "^11.18.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "html-to-image",
+        "version": "^1.11.13",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "i18next",
+        "version": "^25.7.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "i18next-http-backend",
+        "version": "^3.0.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "idb-keyval",
+        "version": "6.2.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jsondiffpatch",
+        "version": "^0.7.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jszip",
+        "version": "^3.10.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "konva",
+        "version": "^9.3.22",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "linkify-react",
+        "version": "^4.3.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "linkifyjs",
+        "version": "^4.3.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "lru-cache",
+        "version": "^11.2.4",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "mtwist",
+        "version": "^1.0.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "nanoid",
+        "version": "^5.1.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "nanostores",
+        "version": "^1.3.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "new-github-issue-url",
+        "version": "^1.1.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "overlayscrollbars",
+        "version": "^2.13.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "overlayscrollbars-react",
+        "version": "^0.5.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "perfect-freehand",
+        "version": "^1.2.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "query-string",
+        "version": "^9.3.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "raf-throttle",
+        "version": "^2.0.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "^19.2.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-colorful",
+        "version": "^5.7.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "^19.2.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dropzone",
+        "version": "^14.3.8",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-error-boundary",
+        "version": "^6.0.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-hook-form",
+        "version": "^7.69.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-hotkeys-hook",
+        "version": "4.5.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-i18next",
+        "version": "^16.5.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-icons",
+        "version": "^5.5.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-redux",
+        "version": "9.2.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-resizable-panels",
+        "version": "^3.0.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-router-dom",
+        "version": "^7.12.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-textarea-autosize",
+        "version": "^8.5.9",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-use",
+        "version": "^17.6.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-virtuoso",
+        "version": "^4.18.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "redux-remember",
+        "version": "^5.3.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "redux-undo",
+        "version": "^1.1.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "rfdc",
+        "version": "^1.4.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "roarr",
+        "version": "^7.21.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "serialize-error",
+        "version": "^12.0.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "socket.io-client",
+        "version": "^4.8.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "stable-hash",
+        "version": "^0.0.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "use-debounce",
+        "version": "^10.0.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "use-device-pixel-ratio",
+        "version": "^1.1.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "uuid",
+        "version": "^11.1.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "zod",
+        "version": "^4.2.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "zod-validation-error",
+        "version": "^4.0.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/preset-typescript",
+        "version": "^7.29.7",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@eslint/js",
+        "version": "^9.39.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-docs",
+        "version": "^10.3.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/addon-links",
+        "version": "^10.3.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@storybook/react-vite",
+        "version": "^10.3.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/node",
+        "version": "^22.19.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/react",
+        "version": "^19.2.14",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/react-dom",
+        "version": "^19.2.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/uuid",
+        "version": "^10.0.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@typescript-eslint/eslint-plugin",
+        "version": "^8.59.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@typescript-eslint/parser",
+        "version": "^8.59.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@vitejs/plugin-react-swc",
+        "version": "^4.3.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@vitest/coverage-v8",
+        "version": "^4.1.5",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@vitest/ui",
+        "version": "^4.1.5",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-plugin-react-compiler",
+        "version": "^1.0.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "concurrently",
+        "version": "^9.2.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "csstype",
+        "version": "^3.2.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "dpdm",
+        "version": "^3.14.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint",
+        "version": "^9.39.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-i18next",
+        "version": "^6.1.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-import",
+        "version": "^2.32.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-path",
+        "version": "^2.1.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-react",
+        "version": "^7.37.5",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-react-hooks",
+        "version": "^7.1.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-react-refresh",
+        "version": "^0.5.2",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-simple-import-sort",
+        "version": "^13.0.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-storybook",
+        "version": "^10.3.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-unused-imports",
+        "version": "^4.4.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "globals",
+        "version": "^16.5.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "happy-dom",
+        "version": "^20.11.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "knip",
+        "version": "^5.77.4",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "magic-string",
+        "version": "^0.30.21",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "openapi-types",
+        "version": "^12.1.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prettier",
+        "version": "^3.8.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "rollup-plugin-visualizer",
+        "version": "^6.0.5",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "storybook",
+        "version": "^10.3.6",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tsafe",
+        "version": "^1.8.12",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "type-fest",
+        "version": "^4.41.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "^5.9.3",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vite",
+        "version": "^8.0.11",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vite-plugin-babel",
+        "version": "^1.6.0",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vite-plugin-eslint",
+        "version": "^1.8.1",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vitest",
+        "version": "^4.1.5",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "^18.2.0 || ^19.1.4",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "^18.2.0 || ^19.1.4",
+        "source_file": "invokeai/frontend/webv1/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@chakra-ui/react",
+        "version": "^3.37.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@dnd-kit/core",
+        "version": "^6.3.1",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@dnd-kit/modifiers",
+        "version": "^9.0.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@dnd-kit/sortable",
+        "version": "^10.0.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@dnd-kit/utilities",
+        "version": "^3.2.2",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@emotion/react",
+        "version": "^11.14.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@fontsource/inter",
+        "version": "^5.3.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@tanstack/react-query",
+        "version": "^5.102.8",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@tanstack/react-router",
+        "version": "^1.170.36",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@tanstack/react-virtual",
+        "version": "^3.14.13",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@xyflow/react",
+        "version": "^12.11.6",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ag-psd",
+        "version": "^31.0.2",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fflate",
+        "version": "^0.8.3",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fuzzysort",
+        "version": "^4.0.2",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "html-to-image",
+        "version": "^1.11.13",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "i18next",
+        "version": "^26.4.2",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "i18next-http-backend",
+        "version": "^4.0.2",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "idb",
+        "version": "^8.0.3",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "lucide-react",
+        "version": "^1.46.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "perfect-freehand",
+        "version": "^1.2.3",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "plotly.js-gl2d-dist-min",
+        "version": "^4.1.1",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "^19.3.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "^19.3.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-hook-tanstack-virtual",
+        "version": "^0.0.4",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-i18next",
+        "version": "^17.0.14",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "socket.io-client",
+        "version": "^4.8.3",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "tinykeys",
+        "version": "^4.0.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "use-sync-external-store",
+        "version": "^1.7.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "yaml",
+        "version": "^2.9.1",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "zod",
+        "version": "^4.6.5",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@rolldown/plugin-babel",
+        "version": "^0.2.4",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/node",
+        "version": "^26.5.1",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/plotly.js",
+        "version": "^3.0.13",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/react",
+        "version": "^19.3.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/react-dom",
+        "version": "^19.3.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/use-sync-external-store",
+        "version": "^1.7.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@vitejs/plugin-react",
+        "version": "^6.1.1",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@vitest/browser-playwright",
+        "version": "5.0.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "axe-core",
+        "version": "^4.13.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-plugin-react-compiler",
+        "version": "^1.0.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "oxfmt",
+        "version": "^0.68.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "oxlint",
+        "version": "^1.83.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "playwright",
+        "version": "1.63.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "typescript",
+        "version": "^7.0.2",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vite",
+        "version": "^8.3.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "vitest",
+        "version": "5.0.0",
+        "source_file": "invokeai/frontend/webv2/package.json",
+        "raw": ""
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 361,
+    "files_with_findings": 335,
+    "severity": {
+      "high": 67,
+      "medium": 39,
+      "low": 255
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 3,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/image.py",
+            "line": 1491,
+            "cwe": "CWE-338",
+            "snippet": "rs = numpy.random.RandomState(numpy.random.MT19937(numpy.random.SeedSequence(self.seed)))"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_hash/model_hash.py",
+            "line": 62,
+            "cwe": "CWE-327",
+            "snippet": "# MD5"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/types/field.ts",
+            "line": 5,
+            "cwe": "CWE-338",
+            "snippet": "import MersenneTwister from 'mtwist';"
+          }
+        ]
+      },
+      "A03-Injection": {
+        "count": 66,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "invokeai/app/invocations/flux2/flux2_denoise.py",
+            "line": 190,
+            "cwe": "CWE-95",
+            "snippet": "vae.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/invocations/text_encoder/sd3_text_encoder.py",
+            "line": 175,
+            "cwe": "CWE-95",
+            "snippet": "clip_text_encoder = clip_text_encoder.eval().requires_grad_(False)"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/fonts/fonts_default.py",
+            "line": 914,
+            "cwe": "CWE-502",
+            "snippet": "result = pickle.loads(stdout)"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/gallery/gallery_default.py",
+            "line": 590,
+            "cwe": "CWE-89",
+            "snippet": "half_query = f\"SELECT {select_cols} {from_clause} WHERE 1=1 {conditions}\""
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/image_index/image_index_default.py",
+            "line": 646,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/image_records/image_records_sqlite.py",
+            "line": 224,
+            "cwe": "CWE-89",
+            "snippet": "SELECT {IMAGE_DTO_COLS} FROM images"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/intermediates/intermediates_records_sqlite.py",
+            "line": 537,
+            "cwe": "CWE-89",
+            "snippet": "SELECT m.{name_column}, m.{subfolder_column} FROM {table} m"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/video_records/video_records_sqlite.py",
+            "line": 38,
+            "cwe": "CWE-89",
+            "snippet": "SELECT {VIDEO_DTO_COLS} FROM videos"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/workflow_records/workflow_records_sqlite.py",
+            "line": 59,
+            "cwe": "CWE-89",
+            "snippet": "f\"SELECT {_RECORD_COLUMNS} FROM workflow_library WHERE workflow_id = ?;\","
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/model_patcher.py",
+            "line": 71,
+            "cwe": "CWE-502",
+            "snippet": "ti_tokenizer = pickle.loads(pickle.dumps(tokenizer))"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/anima/control_net_lllite.py",
+            "line": 490,
+            "cwe": "CWE-95",
+            "snippet": "model.eval().requires_grad_(False)"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/flux/modules/conditioner.py",
+            "line": 25,
+            "cwe": "CWE-95",
+            "snippet": "self.hf_module = self.hf_module.eval().requires_grad_(False)"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/hed.py",
+            "line": 87,
+            "cwe": "CWE-95",
+            "snippet": "self.network.float().eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/lineart.py",
+            "line": 108,
+            "cwe": "CWE-95",
+            "snippet": "self.model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/lineart_anime.py",
+            "line": 158,
+            "cwe": "CWE-95",
+            "snippet": "self.model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/infill_methods/lama.py",
+            "line": 53,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/mlsd/__init__.py",
+            "line": 34,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/normal_bae/__init__.py",
+            "line": 53,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/normal_bae/nets/submodules/efficientnet_repo/onnx_export.py",
+            "line": 73,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/normal_bae/nets/submodules/efficientnet_repo/setup.py",
+            "line": 13,
+            "cwe": "CWE-95",
+            "snippet": "exec(open('geffnet/version.py').read())"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/normal_bae/nets/submodules/efficientnet_repo/validate.py",
+            "line": 126,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/pbr_maps/pbr_maps.py",
+            "line": 55,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/pidi/__init__.py",
+            "line": 34,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/image_util/realesrgan/realesrgan.py",
+            "line": 77,
+            "cwe": "CWE-95",
+            "snippet": "model.eval()"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/backend/ltx2/audio_conditioning.py",
+            "line": 58,
+            "cwe": "CWE-95",
+            "snippet": "return transform.to(device=source.mel_basis.device, dtype=source.mel_basis.dtype).eval()"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 197,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "invokeai/app/api_app.py",
+            "line": 102,
+            "cwe": "CWE-",
+            "snippet": "# TODO: create this all in a method so configuration/etc. can be passed in?"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/api/dependencies.py",
+            "line": 76,
+            "cwe": "CWE-",
+            "snippet": "# TODO: is there a better way to achieve this?"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/api/extract_metadata.py",
+            "line": 96,
+            "cwe": "CWE-",
+            "snippet": "# TODO(psyche): Due to pydantic's handling of None values, it is possible for the graph to fail validation,"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/api/routers/auth.py",
+            "line": 275,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Implement token invalidation when server-side session management is added"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/api/routers/model_manager.py",
+            "line": 567,
+            "cwe": "CWE-",
+            "snippet": "# TODO(MM2): Core models should be handled by the model manager so we can determine if they are installed"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/baseinvocation.py",
+            "line": 491,
+            "cwe": "CWE-",
+            "snippet": "# TODO(psyche): We do not record the node pack of the output, so we cannot log it here"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/composition-nodes.py",
+            "line": 875,
+            "cwe": "CWE-",
+            "snippet": "else:  # TODO: Currently blending only the lightness channel, not really ideal."
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/constants.py",
+            "line": 5,
+            "cwe": "CWE-",
+            "snippet": "HACK: Many nodes are currently hard-coded to use a fixed latent scale factor of 8. This is fragile, and will need to"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/crop_latents.py",
+            "line": 17,
+            "cwe": "CWE-",
+            "snippet": "# TODO(ryand): Named `CropLatentsCoreInvocation` to prevent a conflict with custom node `CropLatentsInvocation`."
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/cv.py",
+            "line": 23,
+            "cwe": "CWE-",
+            "snippet": "# TODO: consider making these utility functions"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/fields.py",
+            "line": 910,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Can we support default_factory?"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/grounding_dino.py",
+            "line": 77,
+            "cwe": "CWE-",
+            "snippet": "# TODO(ryand): Setting the torch_dtype here doesn't work. Investigate whether fp16 is supported by the"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/image.py",
+            "line": 73,
+            "cwe": "CWE-",
+            "snippet": "# TODO: how to handle failure?"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/infill.py",
+            "line": 23,
+            "cwe": "CWE-",
+            "snippet": "methods = Literal[\"tile\", \"color\", \"lama\", \"cv2\"]  # TODO: add mosaic back"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/metadata.py",
+            "line": 388,
+            "cwe": "CWE-",
+            "snippet": "# TODO: should this be stricter or do we just let the UI handle it?"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/model.py",
+            "line": 388,
+            "cwe": "CWE-",
+            "snippet": "# TODO: precision?"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/segment_anything.py",
+            "line": 117,
+            "cwe": "CWE-",
+            "snippet": "# TODO(ryand): Setting the torch_dtype here doesn't work. Investigate whether fp16 is supported by the"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/tiles.py",
+            "line": 147,
+            "cwe": "CWE-",
+            "snippet": "# HACK: The width and height fields are 'meta' fields that can easily be calculated from the other fields on this"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/upscale.py",
+            "line": 16,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Populate this from disk?"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/cogview4/cogview4_denoise.py",
+            "line": 208,
+            "cwe": "CWE-",
+            "snippet": "# TODO(ryand): Make CFG optional."
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/flux/flux_denoise.py",
+            "line": 390,
+            "cwe": "CWE-",
+            "snippet": "# TODO(ryand): We should really do this in a separate invocation to benefit from caching."
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/flux/flux_redux.py",
+            "line": 152,
+            "cwe": "CWE-",
+            "snippet": "# TODO(psyche): Can the probe reliably determine the type of the model? Just hardcoding it bc I don't want to experiment now"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/sd/create_denoise_mask.py",
+            "line": 62,
+            "cwe": "CWE-",
+            "snippet": "# TODO:"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/sd/denoise_latents.py",
+            "line": 95,
+            "cwe": "CWE-",
+            "snippet": "# TODO(ryand): Silently falling back to ddim seems like a bad idea. Look into why this was added and remove if"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/sd/sdxl.py",
+            "line": 36,
+            "cwe": "CWE-",
+            "snippet": "# TODO: precision?"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 28,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "invokeai/app/api/routers/gallery.py",
+            "line": 40,
+            "cwe": "CWE-1188",
+            "snippet": "starred_first: bool = Query(default=True, description=\"Whether to sort by starred items first\"),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/api/routers/images.py",
+            "line": 534,
+            "cwe": "CWE-1188",
+            "snippet": "starred_first: bool = Query(default=True, description=\"Whether to sort by starred images first\"),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/api/routers/recall_parameters.py",
+            "line": 25,
+            "cwe": "CWE-1188",
+            "snippet": "is_enabled: bool = Field(default=True, description=\"Whether the LoRA is enabled\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/api/routers/utilities.py",
+            "line": 95,
+            "cwe": "CWE-1188",
+            "snippet": "combinatorial: bool = Body(default=True, description=\"Whether to use the combinatorial generator\"),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/api/routers/videos.py",
+            "line": 999,
+            "cwe": "CWE-1188",
+            "snippet": "starred_first: bool = Query(default=True, description=\"Whether to sort by starred videos first\"),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/api/routers/virtual_boards.py",
+            "line": 41,
+            "cwe": "CWE-1188",
+            "snippet": "starred_first: bool = Query(default=True, description=\"Whether to sort starred images first\"),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/baseinvocation.py",
+            "line": 335,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/composition-nodes.py",
+            "line": 82,
+            "cwe": "CWE-1188",
+            "snippet": "default=True, description=\"Use more steps in computing gamut (Oklab/Okhsv/Okhsl)\""
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/dw_openpose.py",
+            "line": 21,
+            "cwe": "CWE-1188",
+            "snippet": "draw_body: bool = InputField(default=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/image.py",
+            "line": 1481,
+            "cwe": "CWE-1188",
+            "snippet": "noise_color: bool = InputField(default=True, description=\"Whether to add colored noise\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/loops.py",
+            "line": 226,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/model.py",
+            "line": 785,
+            "cwe": "CWE-1188",
+            "snippet": "seamless_y: bool = InputField(default=True, input=Input.Any, description=\"Specify whether Y axis is seamless\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/noise.py",
+            "line": 64,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/segment_anything.py",
+            "line": 76,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/anima/anima_denoise.py",
+            "line": 206,
+            "cwe": "CWE-1188",
+            "snippet": "add_noise: bool = InputField(default=True, description=\"Add noise based on denoising start.\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/ernie_image/ernie_image_denoise.py",
+            "line": 64,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/ernie_image/ernie_image_model_loader.py",
+            "line": 88,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/flux/flux_denoise.py",
+            "line": 108,
+            "cwe": "CWE-1188",
+            "snippet": "add_noise: bool = InputField(default=True, description=\"Add noise based on denoising start.\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/flux2/flux2_denoise.py",
+            "line": 124,
+            "cwe": "CWE-1188",
+            "snippet": "add_noise: bool = InputField(default=True, description=\"Add noise based on denoising start.\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/sd/denoise_latents.py",
+            "line": 203,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/text_encoder/ltx2_text_encoder.py",
+            "line": 76,
+            "cwe": "CWE-1188",
+            "snippet": "default=True,"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/wan/wan_denoise.py",
+            "line": 385,
+            "cwe": "CWE-1188",
+            "snippet": "add_noise: bool = InputField(default=True, description=\"Add noise based on denoising start.\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/z_image/z_image_denoise.py",
+            "line": 98,
+            "cwe": "CWE-1188",
+            "snippet": "add_noise: bool = InputField(default=True, description=\"Add noise based on denoising start.\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/services/config/config_default.py",
+            "line": 179,
+            "cwe": "CWE-1188",
+            "snippet": "allow_credentials:             bool = Field(default=True,               description=\"Allow CORS credentials.\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/services/session_queue/session_queue_common.py",
+            "line": 308,
+            "cwe": "CWE-1188",
+            "snippet": "_snapshot_readable: bool = PrivateAttr(default=True)"
+          }
+        ]
+      },
+      "A06-VulnerableComponents": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "invokeai/backend/minimax_h3/__init__.py",
+            "line": 9,
+            "cwe": "CWE-1104",
+            "snippet": "symbols exist in the pinned diffusers==0.39.0) and ruff import sorting. Keep"
+          },
+          {
+            "severity": "low",
+            "file": "scripts/check_pins.py",
+            "line": 110,
+            "cwe": "CWE-1104",
+            "snippet": "\"\"\"Compare two dotted versions, zero-padding the shorter one (3.12 == 3.12.0).\"\"\""
+          }
+        ]
+      },
+      "A07-AuthFailures": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "invokeai/app/services/config/config_default.py",
+            "line": 758,
+            "cwe": "CWE-798",
+            "snippet": "URLRegexTokenPair(url_regex=\"cool-models.com\", token=\"my_secret_token\"),"
+          },
+          {
+            "severity": "high",
+            "file": "invokeai/frontend/webv2/src/platform/transport/http.test.ts",
+            "line": 105,
+            "cwe": "CWE-798",
+            "snippet": "const token = 'stable-token';"
+          }
+        ]
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 54,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "invokeai/app/api_app.py",
+            "line": 304,
+            "cwe": "CWE-319",
+            "snippet": "have this query string saved in history or a bookmark, so when the user navigates to `http://127.0.0.1:9090/`, the"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/api/dependencies.py",
+            "line": 84,
+            "cwe": "CWE-319",
+            "snippet": "host = \"http://huggingface.co\""
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/services/download/download_base.py",
+            "line": 188,
+            "cwe": "CWE-",
+            "snippet": "etag: Optional[str] = Field(default=None, description=\"ETag from the remote server, if available\")"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/services/download/download_default.py",
+            "line": 891,
+            "cwe": "CWE-319",
+            "snippet": "#   download_service.download(DownloadJob('http://foo.bar/baz', '/tmp', on_progress=TqdmProgress().update))"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/util/ssrf.py",
+            "line": 16,
+            "cwe": "CWE-319",
+            "snippet": "percent-decodes unreserved characters in the host, so `http://%6cocalhost/` and"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/image_util/composition.py",
+            "line": 25,
+            "cwe": "CWE-319",
+            "snippet": "# CIE Lab to Uniform Perceptual Lab profile is copyright \u00a9 2003 Bruce Justin Lindbloom. All rights reserved. <http://www.brucelindbloom.com>"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/minimax_h3/autoencoder_kl_minimax_h3.py",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/minimax_h3/autoencoder_kl_minimax_h3_audio.py",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/minimax_h3/packing.py",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/minimax_h3/scheduling_minimax_h3.py",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/minimax_h3/transformer_minimax_h3.py",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "#     http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_ext/imaginaire/model.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_ext/imaginaire/__init__.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_ext/imaginaire/lazy_config/registry.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_ext/imaginaire/utils/count_params.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_ext/imaginaire/utils/device.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_ext/imaginaire/utils/distributed.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_ext/imaginaire/utils/__init__.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_src/modules/conditioner.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_src/modules/__init__.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/pid/_src/utils/context_parallel.py",
+            "line": 8,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.apache.org/licenses/LICENSE-2.0"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/util/logging.py",
+            "line": 151,
+            "cwe": "CWE-319",
+            "snippet": "invokeai-web --log_handlers http=http://my.server/path/to/logger,method=POST"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/api/scripts/typegen.js",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "const OPENAPI_URL = 'http://127.0.0.1:9090/openapi.json';"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/webv1/src/common/components/WavyLine.tsx",
+            "line": 51,
+            "cwe": "CWE-319",
+            "snippet": "<svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} xmlns=\"http://www.w3.org/2000/svg\">"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/webv1/src/common/util/baseUrl.test.ts",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "const fallback = 'http://fallback.example';"
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 9,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "invokeai/app/services/download/download_default.py",
+            "line": 644,
+            "cwe": "CWE-601",
+            "snippet": "def _reject_unsafe_redirect(self, response: requests.Response, *args: Any, **kwargs: Any) -> requests.Response:"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/app/store/enhancers/reduxRemember/driver.ts",
+            "line": 104,
+            "cwe": "CWE-918",
+            "snippet": "const res = await fetch(url, {"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/common/hooks/useDownloadImage.ts",
+            "line": 13,
+            "cwe": "CWE-918",
+            "snippet": "const resp = await fetch(item_url);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/modelManagerV2/subpanels/ModelPanel/modelSettingsIO.ts",
+            "line": 81,
+            "cwe": "CWE-918",
+            "snippet": "const response = await fetch(url);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/services/events/setEventListeners.tsx",
+            "line": 969,
+            "cwe": "CWE-918",
+            "snippet": "fetch(url, { headers })"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/webv2/src/app/router.tsx",
+            "line": 95,
+            "cwe": "CWE-601",
+            "snippet": "throw redirect({ to: '/setup' });"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv2/src/features/models/ui/detail/ModelSettingsMenuItems.tsx",
+            "line": 169,
+            "cwe": "CWE-918",
+            "snippet": "const response = await fetch(url);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv2/src/workbench/canvas-engine/render/fontLoader.browser.test.ts",
+            "line": 112,
+            "cwe": "CWE-918",
+            "snippet": "return new Uint8Array(await (await fetch(url)).arrayBuffer());"
+          },
+          {
+            "severity": "medium",
+            "file": "scripts/check_classifiers.py",
+            "line": 21,
+            "cwe": "CWE-918",
+            "snippet": "with urllib.request.urlopen(url) as response:"
+          }
+        ]
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 116,
+    "files_with_findings": 111,
+    "severity": {
+      "high": 1,
+      "medium": 91,
+      "low": 24
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 59,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "invokeai/app/api/routers/system_prompts.py",
+            "line": 62,
+            "cwe": "CWE-1427",
+            "snippet": "system_prompt: SystemPromptWithoutId = Body(description=\"The system prompt to create\"),"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/api/routers/utilities.py",
+            "line": 377,
+            "cwe": "CWE-1427",
+            "snippet": "system_prompt: str | None = None"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/text_llm.py",
+            "line": 26,
+            "cwe": "CWE-1427",
+            "snippet": "system_prompt: str,"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/text_encoder/qwen_image_text_encoder.py",
+            "line": 39,
+            "cwe": "CWE-1427",
+            "snippet": "_EDIT_SYSTEM_PROMPT = ("
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/services/system_prompt_records/system_prompt_records_base.py",
+            "line": 22,
+            "cwe": "CWE-1427",
+            "snippet": "system_prompt: SystemPromptWithoutId,"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/services/system_prompt_records/system_prompt_records_sqlite.py",
+            "line": 36,
+            "cwe": "CWE-1427",
+            "snippet": "system_prompt: SystemPromptWithoutId,"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/text_llm_pipeline.py",
+            "line": 11,
+            "cwe": "CWE-1427",
+            "snippet": "DEFAULT_SYSTEM_PROMPT = ("
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/api/schema.ts",
+            "line": 58692,
+            "cwe": "CWE-1427",
+            "snippet": "create_system_prompt: {"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/components/flow/nodes/Invocation/callSavedWorkflowFormUtils.ts",
+            "line": 302,
+            "cwe": "CWE-1336",
+            "snippet": "fieldTemplate: cloneDynamicFieldTemplate({"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/components/flow/nodes/Invocation/context.tsx",
+            "line": 167,
+            "cwe": "CWE-1336",
+            "snippet": "const fieldTemplate = getInvocationNodeInputTemplate(data, template, fieldName);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/components/flow/nodes/Invocation/fields/InputFieldRenderer.tsx",
+            "line": 100,
+            "cwe": "CWE-1336",
+            "snippet": "if (isStringFieldCollectionInputTemplate(template)) {"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/components/flow/nodes/Invocation/fields/OutputFieldHandle.tsx",
+            "line": 65,
+            "cwe": "CWE-1336",
+            "snippet": "const fieldTemplate = useOutputFieldTemplate(fieldName);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/components/flow/nodes/Invocation/fields/OutputFieldTitle.tsx",
+            "line": 30,
+            "cwe": "CWE-1336",
+            "snippet": "const fieldTemplate = useOutputFieldTemplate(fieldName);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/components/flow/nodes/Invocation/fields/OutputFieldTooltipContent.tsx",
+            "line": 13,
+            "cwe": "CWE-1336",
+            "snippet": "const fieldTemplate = useOutputFieldTemplate(fieldName);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/components/sidePanel/builder/NodeFieldElementSettings.tsx",
+            "line": 53,
+            "cwe": "CWE-1336",
+            "snippet": "if (isIntegerFieldInputTemplate(fieldTemplate)) {"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/store/nodesSlice.test.ts",
+            "line": 75,
+            "cwe": "CWE-1336",
+            "snippet": "fieldTemplate: buildDynamicIntegerTemplate('saved_workflow_input::node-1::a'),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/store/util/fieldValidators.test.ts",
+            "line": 37,
+            "cwe": "CWE-1336",
+            "snippet": "fieldTemplate: buildDynamicIntegerTemplate('saved_workflow_input::node-1::a'),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/store/util/fieldValidators.ts",
+            "line": 245,
+            "cwe": "CWE-1336",
+            "snippet": "if (isImageFieldCollectionInputTemplate(fieldTemplate) && isImageFieldCollectionInputInstance(field)) {"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/store/util/getFirstValidConnection.ts",
+            "line": 144,
+            "cwe": "CWE-1336",
+            "snippet": "const field = getInvocationNodeInputTemplate(targetNode.data, targetTemplate, fieldName);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/store/util/validateConnection.ts",
+            "line": 294,
+            "cwe": "CWE-1336",
+            "snippet": "const targetFieldTemplate = getInvocationNodeInputTemplate(targetNode.data, targetTemplate, c.targetHandle);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/types/field.test.ts",
+            "line": 80,
+            "cwe": "CWE-1336",
+            "snippet": "expect(isLoRAFieldCollectionInputTemplate(template)).toBe(true);"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/util/graph/buildNodesGraph.test.ts",
+            "line": 88,
+            "cwe": "CWE-1336",
+            "snippet": "fieldTemplate: buildDynamicIntegerTemplate('saved_workflow_input::node-1::a'),"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/util/graph/buildNodesGraph.ts",
+            "line": 82,
+            "cwe": "CWE-1336",
+            "snippet": "const fieldTemplate = getInvocationNodeInputTemplate(data, nodeTemplate, name);"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/webv1/src/features/nodes/util/node/nodeUpdate.test.ts",
+            "line": 106,
+            "cwe": "CWE-1427",
+            "snippet": "system_prompt: {"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/frontend/webv1/src/features/nodes/util/node/nodeUpdate.ts",
+            "line": 105,
+            "cwe": "CWE-1336",
+            "snippet": "if (!field || !fieldTemplate || !isEnumFieldInputTemplate(fieldTemplate)) {"
+          }
+        ]
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "invokeai/backend/pid/_src/inference/pipeline_registry.py",
+            "line": 205,
+            "cwe": "CWE-798",
+            "snippet": "token = os.environ.get(\"HF_TOKEN\") or os.environ.get(\"HUGGING_FACE_HUB_TOKEN\")"
+          }
+        ]
+      },
+      "LLM03-SupplyChain": {
+        "count": 50,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "invokeai/app/api/routers/utilities.py",
+            "line": 464,
+            "cwe": "CWE-494",
+            "snippet": "processor = AutoProcessor.from_pretrained(model_abs_path, local_files_only=True) if image is not None else None"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/llava_onevision_vllm.py",
+            "line": 65,
+            "cwe": "CWE-494",
+            "snippet": "processor = AutoProcessor.from_pretrained(model_abs_path, local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/segment_anything.py",
+            "line": 114,
+            "cwe": "CWE-494",
+            "snippet": "sam_model = SamModel.from_pretrained("
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/text_llm.py",
+            "line": 35,
+            "cwe": "CWE-494",
+            "snippet": "tokenizer = AutoTokenizer.from_pretrained(model_abs_path, local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/ernie_image/ernie_image_denoise.py",
+            "line": 240,
+            "cwe": "CWE-494",
+            "snippet": "return scheduler_cls.from_pretrained(model_path, subfolder=\"scheduler\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/flux/flux_redux.py",
+            "line": 128,
+            "cwe": "CWE-494",
+            "snippet": "processor = SiglipImageProcessor.from_pretrained(model_abs_path, local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/krea2/krea2_denoise.py",
+            "line": 383,
+            "cwe": "CWE-494",
+            "snippet": "scheduler = FlowMatchEulerDiscreteScheduler.from_pretrained(str(scheduler_path), local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/qwen_image/qwen_image_denoise.py",
+            "line": 304,
+            "cwe": "CWE-494",
+            "snippet": "scheduler = FlowMatchEulerDiscreteScheduler.from_pretrained(str(scheduler_path), local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/text_encoder/qwen_image_text_encoder.py",
+            "line": 233,
+            "cwe": "CWE-494",
+            "snippet": "image_processor = _ImageProcessorCls.from_pretrained(str(search_dir), local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/invocations/wan/wan_denoise.py",
+            "line": 762,
+            "cwe": "CWE-494",
+            "snippet": "return scheduler_cls.from_pretrained(str(scheduler_dir), local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/services/image_index/image_index_default.py",
+            "line": 615,
+            "cwe": "CWE-494",
+            "snippet": "tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/app/services/model_load/model_load_default.py",
+            "line": 149,
+            "cwe": "CWE-494",
+            "snippet": "return load_class.from_pretrained(model_path, torch_dtype=TorchDevice.choose_torch_dtype())"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/image_util/hed.py",
+            "line": 84,
+            "cwe": "CWE-494",
+            "snippet": "model_path = hf_hub_download(\"lllyasviel/Annotators\", \"ControlNetHED.pth\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/image_util/lineart.py",
+            "line": 105,
+            "cwe": "CWE-494",
+            "snippet": "model_path = hf_hub_download(\"lllyasviel/Annotators\", \"sk_model.pth\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/image_util/lineart_anime.py",
+            "line": 149,
+            "cwe": "CWE-494",
+            "snippet": "model_path = hf_hub_download(\"lllyasviel/Annotators\", \"netG.pth\")"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/image_util/safety_checker.py",
+            "line": 64,
+            "cwe": "CWE-494",
+            "snippet": "cls.feature_extractor = AutoImageProcessor.from_pretrained(model_path)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/clip_vision.py",
+            "line": 39,
+            "cwe": "CWE-494",
+            "snippet": "model = CLIPVisionModelWithProjection.from_pretrained("
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/cogview4.py",
+            "line": 44,
+            "cwe": "CWE-494",
+            "snippet": "result: AnyModel = load_class.from_pretrained("
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/ernie_image.py",
+            "line": 73,
+            "cwe": "CWE-494",
+            "snippet": "result: AnyModel = load_class.from_pretrained(model_path, local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/flux.py",
+            "line": 226,
+            "cwe": "CWE-494",
+            "snippet": "model = AutoencoderKLFlux2.from_pretrained("
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/gemma2_encoder.py",
+            "line": 5,
+            "cwe": "CWE-494",
+            "snippet": "`AutoModelForCausalLM.from_pretrained(...).get_decoder()`), so this loader"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/generic_diffusers.py",
+            "line": 39,
+            "cwe": "CWE-494",
+            "snippet": "result: AnyModel = model_class.from_pretrained("
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/ideogram4.py",
+            "line": 137,
+            "cwe": "CWE-494",
+            "snippet": "return AutoTokenizer.from_pretrained(model_path / \"tokenizer\", local_files_only=True)"
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/krea2.py",
+            "line": 323,
+            "cwe": "CWE-494",
+            "snippet": "return AutoTokenizer.from_pretrained("
+          },
+          {
+            "severity": "medium",
+            "file": "invokeai/backend/model_manager/load/model_loaders/llava_onevision.py",
+            "line": 25,
+            "cwe": "CWE-494",
+            "snippet": "model = LlavaOnevisionForConditionalGeneration.from_pretrained("
+          }
+        ]
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 6,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/composition-nodes.py",
+            "line": 34,
+            "cwe": "CWE-",
+            "snippet": "equivalent_achromatic_lightness,"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/app/invocations/image.py",
+            "line": 760,
+            "cwe": "CWE-",
+            "snippet": "colorspace: Literal[\"RGB\", \"YCbCr\", \"YCbCr-Chroma\", \"YCbCr-Luma\"] = InputField("
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/image_util/color_conversion.py",
+            "line": 160,
+            "cwe": "CWE-",
+            "snippet": "\"\"\"Adapt a 3xHxW normalized XYZ tensor from D65 to D50 using Bradford chromatic adaptation.\"\"\""
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/backend/image_util/composition.py",
+            "line": 29,
+            "cwe": "CWE-",
+            "snippet": "def equivalent_achromatic_lightness(lch_tensor: torch.Tensor):"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/api/schema.ts",
+            "line": 8380,
+            "cwe": "CWE-",
+            "snippet": "colorspace?: \"RGB\" | \"YCbCr\" | \"YCbCr-Chroma\" | \"YCbCr-Luma\";"
+          },
+          {
+            "severity": "low",
+            "file": "invokeai/frontend/webv2/src/platform/ui/hsv.ts",
+            "line": 1,
+            "cwe": "CWE-",
+            "snippet": "/** Preserve hue/saturation for achromatic colors. Triangle weights: hue=s\u00b7v, white=v\u00b7(1\u2212s), black=1\u2212v. */"
+          }
+        ]
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:3d77d16e-5c0d-54fd-8ee2-c4448edb3df0",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-05T20:00:57Z",
+      "component": {
+        "type": "application",
+        "name": "INVOKEAI",
+        "version": "6c3277771d5e",
+        "bom-ref": "pkg:generic/anticloud/INVOKEAI@6c3277771d5e",
+        "purl": "pkg:generic/anticloud/INVOKEAI@6c3277771d5e",
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "6c3277771d5e7885610505ab02900f9567ec3112"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/invoke-ai/InvokeAI"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "accelerate",
+        "version": "unspecified",
+        "purl": "pkg:pypi/accelerate",
+        "bom-ref": "pypi/accelerate@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "bitsandbytes",
+        "version": "unspecified",
+        "purl": "pkg:pypi/bitsandbytes",
+        "bom-ref": "pypi/bitsandbytes@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "torch",
+        "version": ">= 1.4",
+        "purl": "pkg:pypi/torch@1.4",
+        "bom-ref": "pypi/torch@>= 1.4"
+      },
+      {
+        "type": "library",
+        "name": "openapi-typescript",
+        "version": "7.10.1",
+        "purl": "pkg:npm/openapi-typescript@7.10.1",
+        "bom-ref": "npm/openapi-typescript@7.10.1"
+      },
+      {
+        "type": "library",
+        "name": "prettier",
+        "version": "3.8.3",
+        "purl": "pkg:npm/prettier@3.8.3",
+        "bom-ref": "npm/prettier@3.8.3"
+      },
+      {
+        "type": "library",
+        "name": "typescript",
+        "version": "5.9.3",
+        "purl": "pkg:npm/typescript@5.9.3",
+        "bom-ref": "npm/typescript@5.9.3"
+      },
+      {
+        "type": "library",
+        "name": "@atlaskit/pragmatic-drag-and-drop",
+        "version": "^1.7.7",
+        "purl": "pkg:npm/@atlaskit/pragmatic-drag-and-drop@^1.7.7",
+        "bom-ref": "npm/@atlaskit/pragmatic-drag-and-drop@^1.7.7"
+      },
+      {
+        "type": "library",
+        "name": "@atlaskit/pragmatic-drag-and-drop-auto-scroll",
+        "version": "^2.1.2",
+        "purl": "pkg:npm/@atlaskit/pragmatic-drag-and-drop-auto-scroll@^2.1.2",
+        "bom-ref": "npm/@atlaskit/pragmatic-drag-and-drop-auto-scroll@^2.1.2"
+      },
+      {
+        "type": "library",
+        "name": "@atlaskit/pragmatic-drag-and-drop-hitbox",
+        "version": "^1.1.0",
+        "purl": "pkg:npm/@atlaskit/pragmatic-drag-and-drop-hitbox@^1.1.0",
+        "bom-ref": "npm/@atlaskit/pragmatic-drag-and-drop-hitbox@^1.1.0"
+      },
+      {
+        "type": "library",
+        "name": "@dagrejs/dagre",
+        "version": "^1.1.8",
+        "purl": "pkg:npm/@dagrejs/dagre@^1.1.8",
+        "bom-ref": "npm/@dagrejs/dagre@^1.1.8"
+      },
+      {
+        "type": "library",
+        "name": "@dagrejs/graphlib",
+        "version": "^2.2.4",
+        "purl": "pkg:npm/@dagrejs/graphlib@^2.2.4",
+        "bom-ref": "npm/@dagrejs/graphlib@^2.2.4"
+      },
+      {
+        "type": "library",
+        "name": "@fontsource-variable/inter",
+        "version": "^5.2.8",
+        "purl": "pkg:npm/@fontsource-variable/inter@^5.2.8",
+        "bom-ref": "npm/@fontsource-variable/inter@^5.2.8"
+      },
+      {
+        "type": "library",
+        "name": "@invoke-ai/ui-library",
+        "version": "github:invoke-ai/ui-library#v0.0.48",
+        "purl": "pkg:npm/@invoke-ai/ui-library@github:invoke-ai/ui-library#v0.0.48",
+        "bom-ref": "npm/@invoke-ai/ui-library@github:invoke-ai/ui-library#v0.0.48"
+      },
+      {
+        "type": "library",
+        "name": "@nanostores/react",
+        "version": "^1.1.0",
+        "purl": "pkg:npm/@nanostores/react@^1.1.0",
+        "bom-ref": "npm/@nanostores/react@^1.1.0"
+      },
+      {
+        "type": "library",
+        "name": "@observ33r/object-equals",
+        "version": "^1.1.6",
+        "purl": "pkg:npm/@observ33r/object-equals@^1.1.6",
+        "bom-ref": "npm/@observ33r/object-equals@^1.1.6"
+      },
+      {
+        "type": "library",
+        "name": "@reduxjs/toolkit",
+        "version": "2.8.2",
+        "purl": "pkg:npm/@reduxjs/toolkit@2.8.2",
+        "bom-ref": "npm/@reduxjs/toolkit@2.8.2"
+      },
+      {
+        "type": "library",
+        "name": "@roarr/browser-log-writer",
+        "version": "^1.3.0",
+        "purl": "pkg:npm/@roarr/browser-log-writer@^1.3.0",
+        "bom-ref": "npm/@roarr/browser-log-writer@^1.3.0"
+      },
+      {
+        "type": "library",
+        "name": "@xyflow/react",
+        "version": "^12.10.0",
+        "purl": "pkg:npm/@xyflow/react@^12.10.0",
+        "bom-ref": "npm/@xyflow/react@^12.10.0"
+      },
+      {
+        "type": "library",
+        "name": "ag-psd",
+        "version": "^28.5.1",
+        "purl": "pkg:npm/ag-psd@^28.5.1",
+        "bom-ref": "npm/ag-psd@^28.5.1"
+      },
+      {
+        "type": "library",
+        "name": "async-mutex",
+        "version": "^0.5.0",
+        "purl": "pkg:npm/async-mutex@^0.5.0",
+        "bom-ref": "npm/async-mutex@^0.5.0"
+      },
+      {
+        "type": "library",
+        "name": "chakra-react-select",
+        "version": "^4.10.1",
+        "purl": "pkg:npm/chakra-react-select@^4.10.1",
+        "bom-ref": "npm/chakra-react-select@^4.10.1"
+      },
+      {
+        "type": "library",
+        "name": "cmdk",
+        "version": "^1.1.1",
+        "purl": "pkg:npm/cmdk@^1.1.1",
+        "bom-ref": "npm/cmdk@^1.1.1"
+      },
+      {
+        "type": "library",
+        "name": "compare-versions",
+        "version": "^6.1.1",
+        "purl": "pkg:npm/compare-versions@^6.1.1",
+        "bom-ref": "npm/compare-versions@^6.1.1"
+      },
+      {
+        "type": "library",
+        "name": "dockview",
+        "version": "^4.12.0",
+        "purl": "pkg:npm/dockview@^4.12.0",
+        "bom-ref": "npm/dockview@^4.12.0"
+      },
+      {
+        "type": "library",
+        "name": "es-toolkit",
+        "version": "^1.46.1",
+        "purl": "pkg:npm/es-toolkit@^1.46.1",
+        "bom-ref": "npm/es-toolkit@^1.46.1"
+      },
+      {
+        "type": "library",
+        "name": "filesize",
+        "version": "^10.1.6",
+        "purl": "pkg:npm/filesize@^10.1.6",
+        "bom-ref": "npm/filesize@^10.1.6"
+      },
+      {
+        "type": "library",
+        "name": "fracturedjsonjs",
+        "version": "^4.1.1",
+        "purl": "pkg:npm/fracturedjsonjs@^4.1.1",
+        "bom-ref": "npm/fracturedjsonjs@^4.1.1"
+      },
+      {
+        "type": "library",
+        "name": "framer-motion",
+        "version": "^11.18.2",
+        "purl": "pkg:npm/framer-motion@^11.18.2",
+        "bom-ref": "npm/framer-motion@^11.18.2"
+      },
+      {
+        "type": "library",
+        "name": "html-to-image",
+        "version": "^1.11.13",
+        "purl": "pkg:npm/html-to-image@^1.11.13",
+        "bom-ref": "npm/html-to-image@^1.11.13"
+      },
+      {
+        "type": "library",
+        "name": "i18next",
+        "version": "^25.7.3",
+        "purl": "pkg:npm/i18next@^25.7.3",
+        "bom-ref": "npm/i18next@^25.7.3"
+      },
+      {
+        "type": "library",
+        "name": "i18next-http-backend",
+        "version": "^3.0.2",
+        "purl": "pkg:npm/i18next-http-backend@^3.0.2",
+        "bom-ref": "npm/i18next-http-backend@^3.0.2"
+      },
+      {
+        "type": "library",
+        "name": "idb-keyval",
+        "version": "6.2.1",
+        "purl": "pkg:npm/idb-keyval@6.2.1",
+        "bom-ref": "npm/idb-keyval@6.2.1"
+      },
+      {
+        "type": "library",
+        "name": "jsondiffpatch",
+        "version": "^0.7.3",
+        "purl": "pkg:npm/jsondiffpatch@^0.7.3",
+        "bom-ref": "npm/jsondiffpatch@^0.7.3"
+      },
+      {
+        "type": "library",
+        "name": "jszip",
+        "version": "^3.10.1",
+        "purl": "pkg:npm/jszip@^3.10.1",
+        "bom-ref": "npm/jszip@^3.10.1"
+      },
+      {
+        "type": "library",
+        "name": "konva",
+        "version": "^9.3.22",
+        "purl": "pkg:npm/konva@^9.3.22",
+        "bom-ref": "npm/konva@^9.3.22"
+      },
+      {
+        "type": "library",
+        "name": "linkify-react",
+        "version": "^4.3.2",
+        "purl": "pkg:npm/linkify-react@^4.3.2",
+        "bom-ref": "npm/linkify-react@^4.3.2"
+      },
+      {
+        "type": "library",
+        "name": "linkifyjs",
+        "version": "^4.3.2",
+        "purl": "pkg:npm/linkifyjs@^4.3.2",
+        "bom-ref": "npm/linkifyjs@^4.3.2"
+      },
+      {
+        "type": "library",
+        "name": "lru-cache",
+        "version": "^11.2.4",
+        "purl": "pkg:npm/lru-cache@^11.2.4",
+        "bom-ref": "npm/lru-cache@^11.2.4"
+      },
+      {
+        "type": "library",
+        "name": "mtwist",
+        "version": "^1.0.2",
+        "purl": "pkg:npm/mtwist@^1.0.2",
+        "bom-ref": "npm/mtwist@^1.0.2"
+      },
+      {
+        "type": "library",
+        "name": "nanoid",
+        "version": "^5.1.6",
+        "purl": "pkg:npm/nanoid@^5.1.6",
+        "bom-ref": "npm/nanoid@^5.1.6"
+      },
+      {
+        "type": "library",
+        "name": "nanostores",
+        "version": "^1.3.0",
+        "purl": "pkg:npm/nanostores@^1.3.0",
+        "bom-ref": "npm/nanostores@^1.3.0"
+      },
+      {
+        "type": "library",
+        "name": "new-github-issue-url",
+        "version": "^1.1.0",
+        "purl": "pkg:npm/new-github-issue-url@^1.1.0",
+        "bom-ref": "npm/new-github-issue-url@^1.1.0"
+      },
+      {
+        "type": "library",
+        "name": "overlayscrollbars",
+        "version": "^2.13.0",
+        "purl": "pkg:npm/overlayscrollbars@^2.13.0",
+        "bom-ref": "npm/overlayscrollbars@^2.13.0"
+      },
+      {
+        "type": "library",
+        "name": "overlayscrollbars-react",
+        "version": "^0.5.6",
+        "purl": "pkg:npm/overlayscrollbars-react@^0.5.6",
+        "bom-ref": "npm/overlayscrollbars-react@^0.5.6"
+      },
+      {
+        "type": "library",
+        "name": "perfect-freehand",
+        "version": "^1.2.2",
+        "purl": "pkg:npm/perfect-freehand@^1.2.2",
+        "bom-ref": "npm/perfect-freehand@^1.2.2"
+      },
+      {
+        "type": "library",
+        "name": "query-string",
+        "version": "^9.3.1",
+        "purl": "pkg:npm/query-string@^9.3.1",
+        "bom-ref": "npm/query-string@^9.3.1"
+      },
+      {
+        "type": "library",
+        "name": "raf-throttle",
+        "version": "^2.0.6",
+        "purl": "pkg:npm/raf-throttle@^2.0.6",
+        "bom-ref": "npm/raf-throttle@^2.0.6"
+      },
+      {
+        "type": "library",
+        "name": "react",
+        "version": "^19.2.6",
+        "purl": "pkg:npm/react@^19.2.6",
+        "bom-ref": "npm/react@^19.2.6"
+      },
+      {
+        "type": "library",
+        "name": "react-colorful",
+        "version": "^5.7.0",
+        "purl": "pkg:npm/react-colorful@^5.7.0",
+        "bom-ref": "npm/react-colorful@^5.7.0"
+      },
+      {
+        "type": "library",
+        "name": "react-dom",
+        "version": "^19.2.6",
+        "purl": "pkg:npm/react-dom@^19.2.6",
+        "bom-ref": "npm/react-dom@^19.2.6"
+      },
+      {
+        "type": "library",
+        "name": "react-dropzone",
+        "version": "^14.3.8",
+        "purl": "pkg:npm/react-dropzone@^14.3.8",
+        "bom-ref": "npm/react-dropzone@^14.3.8"
+      },
+      {
+        "type": "library",
+        "name": "react-error-boundary",
+        "version": "^6.0.0",
+        "purl": "pkg:npm/react-error-boundary@^6.0.0",
+        "bom-ref": "npm/react-error-boundary@^6.0.0"
+      },
+      {
+        "type": "library",
+        "name": "react-hook-form",
+        "version": "^7.69.0",
+        "purl": "pkg:npm/react-hook-form@^7.69.0",
+        "bom-ref": "npm/react-hook-form@^7.69.0"
+      },
+      {
+        "type": "library",
+        "name": "react-hotkeys-hook",
+        "version": "4.5.0",
+        "purl": "pkg:npm/react-hotkeys-hook@4.5.0",
+        "bom-ref": "npm/react-hotkeys-hook@4.5.0"
+      },
+      {
+        "type": "library",
+        "name": "react-i18next",
+        "version": "^16.5.0",
+        "purl": "pkg:npm/react-i18next@^16.5.0",
+        "bom-ref": "npm/react-i18next@^16.5.0"
+      },
+      {
+        "type": "library",
+        "name": "react-icons",
+        "version": "^5.5.0",
+        "purl": "pkg:npm/react-icons@^5.5.0",
+        "bom-ref": "npm/react-icons@^5.5.0"
+      },
+      {
+        "type": "library",
+        "name": "react-redux",
+        "version": "9.2.0",
+        "purl": "pkg:npm/react-redux@9.2.0",
+        "bom-ref": "npm/react-redux@9.2.0"
+      },
+      {
+        "type": "library",
+        "name": "react-resizable-panels",
+        "version": "^3.0.6",
+        "purl": "pkg:npm/react-resizable-panels@^3.0.6",
+        "bom-ref": "npm/react-resizable-panels@^3.0.6"
+      },
+      {
+        "type": "library",
+        "name": "react-router-dom",
+        "version": "^7.12.0",
+        "purl": "pkg:npm/react-router-dom@^7.12.0",
+        "bom-ref": "npm/react-router-dom@^7.12.0"
+      },
+      {
+        "type": "library",
+        "name": "react-textarea-autosize",
+        "version": "^8.5.9",
+        "purl": "pkg:npm/react-textarea-autosize@^8.5.9",
+        "bom-ref": "npm/react-textarea-autosize@^8.5.9"
+      },
+      {
+        "type": "library",
+        "name": "react-use",
+        "version": "^17.6.0",
+        "purl": "pkg:npm/react-use@^17.6.0",
+        "bom-ref": "npm/react-use@^17.6.0"
+      },
+      {
+        "type": "library",
+        "name": "react-virtuoso",
+        "version": "^4.18.6",
+        "purl": "pkg:npm/react-virtuoso@^4.18.6",
+        "bom-ref": "npm/react-virtuoso@^4.18.6"
+      },
+      {
+        "type": "library",
+        "name": "redux-remember",
+        "version": "^5.3.0",
+        "purl": "pkg:npm/redux-remember@^5.3.0",
+        "bom-ref": "npm/redux-remember@^5.3.0"
+      },
+      {
+        "type": "library",
+        "name": "redux-undo",
+        "version": "^1.1.0",
+        "purl": "pkg:npm/redux-undo@^1.1.0",
+        "bom-ref": "npm/redux-undo@^1.1.0"
+      },
+      {
+        "type": "library",
+        "name": "rfdc",
+        "version": "^1.4.1",
+        "purl": "pkg:npm/rfdc@^1.4.1",
+        "bom-ref": "npm/rfdc@^1.4.1"
+      },
+      {
+        "type": "library",
+        "name": "roarr",
+        "version": "^7.21.2",
+        "purl": "pkg:npm/roarr@^7.21.2",
+        "bom-ref": "npm/roarr@^7.21.2"
+      },
+      {
+        "type": "library",
+        "name": "serialize-error",
+        "version": "^12.0.0",
+        "purl": "pkg:npm/serialize-error@^12.0.0",
+        "bom-ref": "npm/serialize-error@^12.0.0"
+      },
+      {
+        "type": "library",
+        "name": "socket.io-client",
+        "version": "^4.8.3",
+        "purl": "pkg:npm/socket.io-client@^4.8.3",
+        "bom-ref": "npm/socket.io-client@^4.8.3"
+      },
+      {
+        "type": "library",
+        "name": "stable-hash",
+        "version": "^0.0.6",
+        "purl": "pkg:npm/stable-hash@^0.0.6",
+        "bom-ref": "npm/stable-hash@^0.0.6"
+      },
+      {
+        "type": "library",
+        "name": "use-debounce",
+        "version": "^10.0.6",
+        "purl": "pkg:npm/use-debounce@^10.0.6",
+        "bom-ref": "npm/use-debounce@^10.0.6"
+      },
+      {
+        "type": "library",
+        "name": "use-device-pixel-ratio",
+        "version": "^1.1.2",
+        "purl": "pkg:npm/use-device-pixel-ratio@^1.1.2",
+        "bom-ref": "npm/use-device-pixel-ratio@^1.1.2"
+      },
+      {
+        "type": "library",
+        "name": "uuid",
+        "version": "^11.1.0",
+        "purl": "pkg:npm/uuid@^11.1.0",
+        "bom-ref": "npm/uuid@^11.1.0"
+      },
+      {
+        "type": "library",
+        "name": "zod",
+        "version": "^4.2.1",
+        "purl": "pkg:npm/zod@^4.2.1",
+        "bom-ref": "npm/zod@^4.2.1"
+      },
+      {
+        "type": "library",
+        "name": "zod-validation-error",
+        "version": "^4.0.2",
+        "purl": "pkg:npm/zod-validation-error@^4.0.2",
+        "bom-ref": "npm/zod-validation-error@^4.0.2"
+      },
+      {
+        "type": "library",
+        "name": "@babel/preset-typescript",
+        "version": "^7.29.7",
+        "purl": "pkg:npm/@babel/preset-typescript@^7.29.7",
+        "bom-ref": "npm/@babel/preset-typescript@^7.29.7"
+      },
+      {
+        "type": "library",
+        "name": "@eslint/js",
+        "version": "^9.39.2",
+        "purl": "pkg:npm/@eslint/js@^9.39.2",
+        "bom-ref": "npm/@eslint/js@^9.39.2"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/addon-docs",
+        "version": "^10.3.6",
+        "purl": "pkg:npm/@storybook/addon-docs@^10.3.6",
+        "bom-ref": "npm/@storybook/addon-docs@^10.3.6"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/addon-links",
+        "version": "^10.3.6",
+        "purl": "pkg:npm/@storybook/addon-links@^10.3.6",
+        "bom-ref": "npm/@storybook/addon-links@^10.3.6"
+      },
+      {
+        "type": "library",
+        "name": "@storybook/react-vite",
+        "version": "^10.3.6",
+        "purl": "pkg:npm/@storybook/react-vite@^10.3.6",
+        "bom-ref": "npm/@storybook/react-vite@^10.3.6"
+      },
+      {
+        "type": "library",
+        "name": "@types/node",
+        "version": "^22.19.3",
+        "purl": "pkg:npm/@types/node@^22.19.3",
+        "bom-ref": "npm/@types/node@^22.19.3"
+      },
+      {
+        "type": "library",
+        "name": "@types/react",
+        "version": "^19.2.14",
+        "purl": "pkg:npm/@types/react@^19.2.14",
+        "bom-ref": "npm/@types/react@^19.2.14"
+      },
+      {
+        "type": "library",
+        "name": "@types/react-dom",
+        "version": "^19.2.3",
+        "purl": "pkg:npm/@types/react-dom@^19.2.3",
+        "bom-ref": "npm/@types/react-dom@^19.2.3"
+      },
+      {
+        "type": "library",
+        "name": "@types/uuid",
+        "version": "^10.0.0",
+        "purl": "pkg:npm/@types/uuid@^10.0.0",
+        "bom-ref": "npm/@types/uuid@^10.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@typescript-eslint/eslint-plugin",
+        "version": "^8.59.2",
+        "purl": "pkg:npm/@typescript-eslint/eslint-plugin@^8.59.2",
+        "bom-ref": "npm/@typescript-eslint/eslint-plugin@^8.59.2"
+      },
+      {
+        "type": "library",
+        "name": "@typescript-eslint/parser",
+        "version": "^8.59.2",
+        "purl": "pkg:npm/@typescript-eslint/parser@^8.59.2",
+        "bom-ref": "npm/@typescript-eslint/parser@^8.59.2"
+      },
+      {
+        "type": "library",
+        "name": "@vitejs/plugin-react-swc",
+        "version": "^4.3.0",
+        "purl": "pkg:npm/@vitejs/plugin-react-swc@^4.3.0",
+        "bom-ref": "npm/@vitejs/plugin-react-swc@^4.3.0"
+      },
+      {
+        "type": "library",
+        "name": "@vitest/coverage-v8",
+        "version": "^4.1.5",
+        "purl": "pkg:npm/@vitest/coverage-v8@^4.1.5",
+        "bom-ref": "npm/@vitest/coverage-v8@^4.1.5"
+      },
+      {
+        "type": "library",
+        "name": "@vitest/ui",
+        "version": "^4.1.5",
+        "purl": "pkg:npm/@vitest/ui@^4.1.5",
+        "bom-ref": "npm/@vitest/ui@^4.1.5"
+      },
+      {
+        "type": "library",
+        "name": "babel-plugin-react-compiler",
+        "version": "^1.0.0",
+        "purl": "pkg:npm/babel-plugin-react-compiler@^1.0.0",
+        "bom-ref": "npm/babel-plugin-react-compiler@^1.0.0"
+      },
+      {
+        "type": "library",
+        "name": "concurrently",
+        "version": "^9.2.1",
+        "purl": "pkg:npm/concurrently@^9.2.1",
+        "bom-ref": "npm/concurrently@^9.2.1"
+      },
+      {
+        "type": "library",
+        "name": "csstype",
+        "version": "^3.2.3",
+        "purl": "pkg:npm/csstype@^3.2.3",
+        "bom-ref": "npm/csstype@^3.2.3"
+      },
+      {
+        "type": "library",
+        "name": "dpdm",
+        "version": "^3.14.0",
+        "purl": "pkg:npm/dpdm@^3.14.0",
+        "bom-ref": "npm/dpdm@^3.14.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint",
+        "version": "^9.39.2",
+        "purl": "pkg:npm/eslint@^9.39.2",
+        "bom-ref": "npm/eslint@^9.39.2"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-i18next",
+        "version": "^6.1.3",
+        "purl": "pkg:npm/eslint-plugin-i18next@^6.1.3",
+        "bom-ref": "npm/eslint-plugin-i18next@^6.1.3"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-import",
+        "version": "^2.32.0",
+        "purl": "pkg:npm/eslint-plugin-import@^2.32.0",
+        "bom-ref": "npm/eslint-plugin-import@^2.32.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-path",
+        "version": "^2.1.0",
+        "purl": "pkg:npm/eslint-plugin-path@^2.1.0",
+        "bom-ref": "npm/eslint-plugin-path@^2.1.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-react",
+        "version": "^7.37.5",
+        "purl": "pkg:npm/eslint-plugin-react@^7.37.5",
+        "bom-ref": "npm/eslint-plugin-react@^7.37.5"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-react-hooks",
+        "version": "^7.1.1",
+        "purl": "pkg:npm/eslint-plugin-react-hooks@^7.1.1",
+        "bom-ref": "npm/eslint-plugin-react-hooks@^7.1.1"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-react-refresh",
+        "version": "^0.5.2",
+        "purl": "pkg:npm/eslint-plugin-react-refresh@^0.5.2",
+        "bom-ref": "npm/eslint-plugin-react-refresh@^0.5.2"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-simple-import-sort",
+        "version": "^13.0.0",
+        "purl": "pkg:npm/eslint-plugin-simple-import-sort@^13.0.0",
+        "bom-ref": "npm/eslint-plugin-simple-import-sort@^13.0.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-storybook",
+        "version": "^10.3.6",
+        "purl": "pkg:npm/eslint-plugin-storybook@^10.3.6",
+        "bom-ref": "npm/eslint-plugin-storybook@^10.3.6"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-unused-imports",
+        "version": "^4.4.1",
+        "purl": "pkg:npm/eslint-plugin-unused-imports@^4.4.1",
+        "bom-ref": "npm/eslint-plugin-unused-imports@^4.4.1"
+      },
+      {
+        "type": "library",
+        "name": "globals",
+        "version": "^16.5.0",
+        "purl": "pkg:npm/globals@^16.5.0",
+        "bom-ref": "npm/globals@^16.5.0"
+      },
+      {
+        "type": "library",
+        "name": "happy-dom",
+        "version": "^20.11.6",
+        "purl": "pkg:npm/happy-dom@^20.11.6",
+        "bom-ref": "npm/happy-dom@^20.11.6"
+      },
+      {
+        "type": "library",
+        "name": "knip",
+        "version": "^5.77.4",
+        "purl": "pkg:npm/knip@^5.77.4",
+        "bom-ref": "npm/knip@^5.77.4"
+      },
+      {
+        "type": "library",
+        "name": "magic-string",
+        "version": "^0.30.21",
+        "purl": "pkg:npm/magic-string@^0.30.21",
+        "bom-ref": "npm/magic-string@^0.30.21"
+      },
+      {
+        "type": "library",
+        "name": "openapi-types",
+        "version": "^12.1.3",
+        "purl": "pkg:npm/openapi-types@^12.1.3",
+        "bom-ref": "npm/openapi-types@^12.1.3"
+      },
+      {
+        "type": "library",
+        "name": "rollup-plugin-visualizer",
+        "version": "^6.0.5",
+        "purl": "pkg:npm/rollup-plugin-visualizer@^6.0.5",
+        "bom-ref": "npm/rollup-plugin-visualizer@^6.0.5"
+      },
+      {
+        "type": "library",
+        "name": "storybook",
+        "version": "^10.3.6",
+        "purl": "pkg:npm/storybook@^10.3.6",
+        "bom-ref": "npm/storybook@^10.3.6"
+      },
+      {
+        "type": "library",
+        "name": "tsafe",
+        "version": "^1.8.12",
+        "purl": "pkg:npm/tsafe@^1.8.12",
+        "bom-ref": "npm/tsafe@^1.8.12"
+      },
+      {
+        "type": "library",
+        "name": "type-fest",
+        "version": "^4.41.0",
+        "purl": "pkg:npm/type-fest@^4.41.0",
+        "bom-ref": "npm/type-fest@^4.41.0"
+      },
+      {
+        "type": "library",
+        "name": "vite",
+        "version": "^8.0.11",
+        "purl": "pkg:npm/vite@^8.0.11",
+        "bom-ref": "npm/vite@^8.0.11"
+      },
+      {
+        "type": "library",
+        "name": "vite-plugin-babel",
+        "version": "^1.6.0",
+        "purl": "pkg:npm/vite-plugin-babel@^1.6.0",
+        "bom-ref": "npm/vite-plugin-babel@^1.6.0"
+      },
+      {
+        "type": "library",
+        "name": "vite-plugin-eslint",
+        "version": "^1.8.1",
+        "purl": "pkg:npm/vite-plugin-eslint@^1.8.1",
+        "bom-ref": "npm/vite-plugin-eslint@^1.8.1"
+      },
+      {
+        "type": "library",
+        "name": "vitest",
+        "version": "^4.1.5",
+        "purl": "pkg:npm/vitest@^4.1.5",
+        "bom-ref": "npm/vitest@^4.1.5"
+      },
+      {
+        "type": "library",
+        "name": "@chakra-ui/react",
+        "version": "^3.37.0",
+        "purl": "pkg:npm/@chakra-ui/react@^3.37.0",
+        "bom-ref": "npm/@chakra-ui/react@^3.37.0"
+      },
+      {
+        "type": "library",
+        "name": "@dnd-kit/core",
+        "version": "^6.3.1",
+        "purl": "pkg:npm/@dnd-kit/core@^6.3.1",
+        "bom-ref": "npm/@dnd-kit/core@^6.3.1"
+      },
+      {
+        "type": "library",
+        "name": "@dnd-kit/modifiers",
+        "version": "^9.0.0",
+        "purl": "pkg:npm/@dnd-kit/modifiers@^9.0.0",
+        "bom-ref": "npm/@dnd-kit/modifiers@^9.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@dnd-kit/sortable",
+        "version": "^10.0.0",
+        "purl": "pkg:npm/@dnd-kit/sortable@^10.0.0",
+        "bom-ref": "npm/@dnd-kit/sortable@^10.0.0"
+      },
+      {
+        "type": "library",
+        "name": "@dnd-kit/utilities",
+        "version": "^3.2.2",
+        "purl": "pkg:npm/@dnd-kit/utilities@^3.2.2",
+        "bom-ref": "npm/@dnd-kit/utilities@^3.2.2"
+      },
+      {
+        "type": "library",
+        "name": "@emotion/react",
+        "version": "^11.14.0",
+        "purl": "pkg:npm/@emotion/react@^11.14.0",
+        "bom-ref": "npm/@emotion/react@^11.14.0"
+      },
+      {
+        "type": "library",
+        "name": "@fontsource/inter",
+        "version": "^5.3.0",
+        "purl": "pkg:npm/@fontsource/inter@^5.3.0",
+        "bom-ref": "npm/@fontsource/inter@^5.3.0"
+      },
+      {
+        "type": "library",
+        "name": "@tanstack/react-query",
+        "version": "^5.102.8",
+        "purl": "pkg:npm/@tanstack/react-query@^5.102.8",
+        "bom-ref": "npm/@tanstack/react-query@^5.102.8"
+      },
+      {
+        "type": "library",
+        "name": "@tanstack/react-router",
+        "version": "^1.170.36",
+        "purl": "pkg:npm/@tanstack/react-router@^1.170.36",
+        "bom-ref": "npm/@tanstack/react-router@^1.170.36"
+      },
+      {
+        "type": "library",
+        "name": "@tanstack/react-virtual",
+        "version": "^3.14.13",
+        "purl": "pkg:npm/@tanstack/react-virtual@^3.14.13",
+        "bom-ref": "npm/@tanstack/react-virtual@^3.14.13"
+      },
+      {
+        "type": "library",
+        "name": "fflate",
+        "version": "^0.8.3",
+        "purl": "pkg:npm/fflate@^0.8.3",
+        "bom-ref": "npm/fflate@^0.8.3"
+      },
+      {
+        "type": "library",
+        "name": "fuzzysort",
+        "version": "^4.0.2",
+        "purl": "pkg:npm/fuzzysort@^4.0.2",
+        "bom-ref": "npm/fuzzysort@^4.0.2"
+      },
+      {
+        "type": "library",
+        "name": "idb",
+        "version": "^8.0.3",
+        "purl": "pkg:npm/idb@^8.0.3",
+        "bom-ref": "npm/idb@^8.0.3"
+      },
+      {
+        "type": "library",
+        "name": "lucide-react",
+        "version": "^1.46.0",
+        "purl": "pkg:npm/lucide-react@^1.46.0",
+        "bom-ref": "npm/lucide-react@^1.46.0"
+      },
+      {
+        "type": "library",
+        "name": "plotly.js-gl2d-dist-min",
+        "version": "^4.1.1",
+        "purl": "pkg:npm/plotly.js-gl2d-dist-min@^4.1.1",
+        "bom-ref": "npm/plotly.js-gl2d-dist-min@^4.1.1"
+      },
+      {
+        "type": "library",
+        "name": "react-hook-tanstack-virtual",
+        "version": "^0.0.4",
+        "purl": "pkg:npm/react-hook-tanstack-virtual@^0.0.4",
+        "bom-ref": "npm/react-hook-tanstack-virtual@^0.0.4"
+      },
+      {
+        "type": "library",
+        "name": "tinykeys",
+        "version": "^4.0.0",
+        "purl": "pkg:npm/tinykeys@^4.0.0",
+        "bom-ref": "npm/tinykeys@^4.0.0"
+      },
+      {
+        "type": "library",
+        "name": "use-sync-external-store",
+        "version": "^1.7.0",
+        "purl": "pkg:npm/use-sync-external-store@^1.7.0",
+        "bom-ref": "npm/use-sync-external-store@^1.7.0"
+      },
+      {
+        "type": "library",
+        "name": "yaml",
+        "version": "^2.9.1",
+        "purl": "pkg:npm/yaml@^2.9.1",
+        "bom-ref": "npm/yaml@^2.9.1"
+      },
+      {
+        "type": "library",
+        "name": "@rolldown/plugin-babel",
+        "version": "^0.2.4",
+        "purl": "pkg:npm/@rolldown/plugin-babel@^0.2.4",
+        "bom-ref": "npm/@rolldown/plugin-babel@^0.2.4"
+      },
+      {
+        "type": "library",
+        "name": "@types/plotly.js",
+        "version": "^3.0.13",
+        "purl": "pkg:npm/@types/plotly.js@^3.0.13",
+        "bom-ref": "npm/@types/plotly.js@^3.0.13"
+      },
+      {
+        "type": "library",
+        "name": "@types/use-sync-external-store",
+        "version": "^1.7.0",
+        "purl": "pkg:npm/@types/use-sync-external-store@^1.7.0",
+        "bom-ref": "npm/@types/use-sync-external-store@^1.7.0"
+      },
+      {
+        "type": "library",
+        "name": "@vitejs/plugin-react",
+        "version": "^6.1.1",
+        "purl": "pkg:npm/@vitejs/plugin-react@^6.1.1",
+        "bom-ref": "npm/@vitejs/plugin-react@^6.1.1"
+      },
+      {
+        "type": "library",
+        "name": "@vitest/browser-playwright",
+        "version": "5.0.0",
+        "purl": "pkg:npm/@vitest/browser-playwright@5.0.0",
+        "bom-ref": "npm/@vitest/browser-playwright@5.0.0"
+      },
+      {
+        "type": "library",
+        "name": "axe-core",
+        "version": "^4.13.0",
+        "purl": "pkg:npm/axe-core@^4.13.0",
+        "bom-ref": "npm/axe-core@^4.13.0"
+      },
+      {
+        "type": "library",
+        "name": "oxfmt",
+        "version": "^0.68.0",
+        "purl": "pkg:npm/oxfmt@^0.68.0",
+        "bom-ref": "npm/oxfmt@^0.68.0"
+      },
+      {
+        "type": "library",
+        "name": "oxlint",
+        "version": "^1.83.0",
+        "purl": "pkg:npm/oxlint@^1.83.0",
+        "bom-ref": "npm/oxlint@^1.83.0"
+      },
+      {
+        "type": "library",
+        "name": "playwright",
+        "version": "1.63.0",
+        "purl": "pkg:npm/playwright@1.63.0",
+        "bom-ref": "npm/playwright@1.63.0"
+      }
+    ]
+  },
+  "elapsed_seconds": 3702.98
+}
